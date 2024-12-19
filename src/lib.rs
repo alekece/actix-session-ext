@@ -10,7 +10,7 @@
 //!
 //! // create an actix application and attach the session middleware to it
 //!
-//! const USER_KEY: SessionKey<String> = SessionKey::new("user_id");
+//! const USER_KEY: SessionKey<String> = SessionKey::new("user");
 //! const TIMESTAMP_KEY: SessionKey<u64> = SessionKey::new("timestamp");
 //!
 //! #[actix_web::post("/login")]
