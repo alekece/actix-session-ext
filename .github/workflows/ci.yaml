@@ -36,10 +36,10 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
 
       - name: Run cargo build
-        uses: cargo build --all-targets
+        run: cargo build --all-targets
 
       - name: Run cargo test
-        uses: cargo test --all-targets
+        run: cargo test --all-targets
 
   build-target:
     name: Build on ${{ matrix.os }} for ${{ matrix.target }} target
@@ -84,7 +84,7 @@ jobs:
           targets: ${{ matrix.target }}
 
       - name: Run cargo build
-        uses: cargo build --all-targets
+        run: cargo build --all-targets
 
       - name: Run cargo test
-        uses: cargo test --all-targets
+        run: cargo test --all-targets
